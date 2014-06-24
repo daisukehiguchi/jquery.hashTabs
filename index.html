@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery.hashTabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="tabs">
+
+  <ul>
+    <li><a href="#tabs_1">タブその1</a></li>
+    <li><a href="#tabs_2">タブその2</a></li>
+    <li><a href="#tabs_3">タブその3</a></li>
+    <li><a href="#tabs_4">タブその4</a></li>
+  </ul>
+  <div id="tabs_1" class="tabContent">
+    <p>タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。タブ1の内容。</p>
+  </div>
+  <div id="tabs_2" class="tabContent">
+    <p>我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。我輩はタブ2である。</p>
+  </div>
+  <div id="tabs_3" class="tabContent">
+    <p>タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。タブ3の出番。</p>
+  </div>
+  <div id="tabs_4" class="tabContent">
+    <p>タブ4です。タブ4です。タブ4です。タブ4です。タブ4です。タブ4です。</p>
+  </div>
+	
+</div>
+
+<!-- Supported jQuery ver1.8 --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+<!-- Supported jQuery UI ver1.9 --> 
+<script src="https://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+
+<script src="./jquery.ba-hashchange.min.js"></script>
+<script src="./jquery.hashTabs.js"></script>
+
+<script>
+$(function() {
+	$('.tabs').hashTabs({
+		content : ".tabContent"
+	});
+});
+</script>
+
+</body>
+</html>
